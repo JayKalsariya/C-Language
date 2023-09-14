@@ -132,23 +132,42 @@ main()
 	{
 		if(a<c)
 		{
-			p("a is small");
+			if(a<d)
+			{
+				p("a is small");
+			}
+			else
+			{
+				p("d is small");
+			}
 		}
-		else
+		else if(c<d)
 		{
 			p("c is small");
 		}
+		else
+		{
+			p("d is small");
+		}
 	}
-	else
+	else if(b<c)
 	{
-		if(b<c)
+		if(b<d)
 		{
 			p("b is small");
 		}
 		else
 		{
-			p("c is small");
+			p("d is small");
 		}
+	}
+	else if(c<d)
+	{
+		p("c is small");
+	}
+	else
+	{
+		p("d is small");
 	}
 
 	getch();
