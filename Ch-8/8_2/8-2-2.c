@@ -9,17 +9,23 @@ int main()
     s("%d",&n1);
     p("Enter second year : ");
     s("%d",&n2);
-    int n=0,a[n];
-    for (int i = 0; i < n; i++)
-    { 
+
+    int n=0,a[n2-n1];
+
+   
         for (int j = n1; j <= n2; j++)
         {
             if (j%4==0)
             {
-                p("%d\n",j);
-
+                a[n] = j;
+                n++;
             } 
         }
-    }
+
+        for (int i = 0; i < n; i++)
+        {
+            printf("%d\n",a[i]);
+        }
+        
     return 0;
 }
