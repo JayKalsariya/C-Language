@@ -4,8 +4,9 @@
 
 int main()
 {
+    int l1=0,l2=0,count1=0,count2=0;
     char e1[20]="admin123@gmail.com", e2[20], P1[15]="12345678", P2[15];
-    int l1,l2,count1=0,count2=0;
+    
     p("enter email : ");
     s("%s",&e2);
     p("enter password : ");
@@ -19,36 +20,26 @@ int main()
     {
         l2++;
     }
-
+    
     for (int i = 0; i < l1; i++)
     {
-        for (int j = 0; j < l1; j++)
-        {
-            if (e1[i]==e2[j])
+            if (e1[i]==e2[i])
             {
                 count1++;
             }
-            
-        }
-        
     }
-    p("\n%d",count1);
-    for (int i = 0; i < l1; i++)
+
+    for (int i = 0; i < l2; i++)
     {
-        for (int j = 0; j < l1; j++)
-        {
-            if (P1[i]==P2[j])
+            if (P1[i]==P2[i])
             {
                 count2++;
             }
-            
-        }
-        
     }
 
-    (count1 == l1-1 && count2 == l2-1)
-        ?p("LOGIN SUCCESSFULL !!")
-        :p("LOGIN INVALID !!");
+    ((count1 == l1) && (count2 == l2))
+        ?p("\n\tLOGIN SUCCESSFULL !!")
+        :p("\n\tLOGIN INVALID !!");
 
     return 0;
 }
