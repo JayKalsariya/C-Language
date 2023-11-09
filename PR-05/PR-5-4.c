@@ -21,8 +21,8 @@ main(){
 	p("Elements of row %d\t: ",r1);
 	
 		for(j=0;j<c;j++){
-			p("%d, ",a[r1-1][j]);
-			r_sum+=a[r1-1][j];
+			p("%d, ",a[r1][j]);
+			r_sum+=a[r1][j];
 		}
 		
 	p("\nThe sum of a row %d\t: %d",r1,r_sum);
@@ -32,8 +32,8 @@ main(){
 	p("Elements of row %d\t: ",c1);
 	
 		for(i=0;i<r;i++){
-			p("%d, ",a[i][c1-1]);
-			c_sum+=a[i][c1-1];
+			p("%d, ",a[i][c1]);
+			c_sum+=a[i][c1];
 		}
 		
 	p("\nThe sum of a column %d\t: %d",c1,c_sum);

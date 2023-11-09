@@ -21,5 +21,11 @@ int main()
     p("Enter any num : ");
     scanf("%d", &dn);
     p("Binary Number : %d",bnr(dn));
+
+
     return 0;
 }
+
+
+
+//100101010000011011001
