@@ -15,7 +15,7 @@ main()
     }
 
     int *ptr;
-    ptr = &a;
+    ptr = &a;//a[0]
 
     p("\n\tsqure of elements....\n\n");
     for (int i = 0; i < n; i++)
