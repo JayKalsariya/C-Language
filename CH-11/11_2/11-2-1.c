@@ -3,21 +3,25 @@
 #define s scanf
 
 int arrayRev(int size, int j){
-    int a[size], *ptr[size];
+    int a[size], *ptr[size], **ptr2[size];
     for (int i = 0; i < size; i++)
     {
         p("a[%d] : ",i);
         s("%d",&a[i]);
     }
-    for (int i = size-1; i >=0 ; i--)
+    for (int i = 0; i < size ; i++)
     {
-        ptr[j] = &a[i];
+        ptr[i] = &a[i];
+    }
+    for (int i = size-1; i >= 0 ; i--)
+    {
+        ptr2[j] = &ptr[i];
         j++;
     }
     p("Reverse Array.....\n\t=> ");
     for (int i = 0; i < size; i++)
     {
-        p("%d, ",*ptr[i]);
+        p("%d, ",**ptr2[i]);
     }
 }
 
