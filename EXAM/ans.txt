@@ -8,4 +8,4 @@ product no	product name	product qut	product price
 102		ADDIDAS		3		500
 103		PUMA		1		1500
 
-------------------TOTAL BILL----------------------15340.00-------
+------------------TOTAL BILL-------------------15340.00-------
