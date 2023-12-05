@@ -5,7 +5,7 @@ Contact no.	: 7621870287
 product no	product name	product qut	product price
 --------------------------------------------------------------
   101		  NIKE		  2		5000
-  102		  ADDIDAS  	  3 	      500
+  102		  ADDIDAS  	  3 	        500
   103		  PUMA		  1		1500
 
 ------------------TOTAL BILL-------------------15340.00-------
